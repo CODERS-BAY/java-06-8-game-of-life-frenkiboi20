@@ -47,7 +47,7 @@ public class Main {
         int[][] nextGen = newGen(exploder);
 
         for (int i = 1; i < amountGen; i++) {
-
+            System.out.println(i + ".Generation");
             nextGen = newGen(nextGen);
             Thread.sleep(1000);
         }
@@ -91,8 +91,6 @@ public class Main {
                 }
             }
         }
-
-        System.out.println("Next Generation");
 
         for (int i = 0; i < gen.length; i++) {
             for (int j = 0; j < gen.length; j++) {
